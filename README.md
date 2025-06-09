@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 🛒 Whatbytes - Frontend Assignment
 
-First, run the development server:
+This is a frontend assignment built with **Next.js** and **Tailwind CSS**, based on the given UI and feature requirements. The project includes product listing, filtering, a product details page, and an optional cart page with full functionality.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🔗 Live Link
+👉 [View Live Site](https://[YOUR_LIVE_LINK])
+
+## 🧾 GitHub Repository
+👉 [GitHub Repo](https://github.com/Dipto842/Whatbytes)
+
+---
+
+## 🧰 Tech Stack
+
+- Next.js
+- Tailwind CSS
+- React Context API (for Cart State) ← *(replace with Zustand/Redux if used)*
+- Lucide React (for icons)
+- localStorage (to persist cart)
+
+---
+
+## 📁 Features Implemented
+
+### ✅ Home Page (`/`)
+
+- Responsive Header with:
+  - Logo (left)
+  - Search bar (center)
+  - Cart button with badge and avatar (right)
+- Sidebar Filters:
+  - Category filter (checkboxes)
+  - Price Range Slider
+  - Brand Filter
+- Product Grid:
+  - Responsive (3/2/1 columns)
+  - Product Card:
+    - Image
+    - Title
+    - Price
+    - Rating Stars (optional)
+    - Add to Cart button
+- Footer with copyright
+
+---
+
+### ✅ Product Details Page (`/product/[id]`)
+
+- Product image
+- Title, Price, Category
+- Description
+- Quantity selector
+- Add to Cart button
+- Optional: Reviews section
+
+---
+
+### ✅ Bonus - Cart Page (`/cart`)
+
+- List of added products
+- Quantity update feature
+- Remove item button
+- Cart total price
+- Checkout button
+- Persistent cart state using `localStorage`
+
+---
+
+## 💻 Folder Structure
+
+```
+/app
+  /product/[id]  → Product details page
+  /cart          → Cart page
+/components      → Reusable UI components
+/data            → JSON product data
+/context         → Cart context (if used)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Functionality & Logic
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- URL-based filtering (`?category=electronics&price=0-1000`)
+- String-based search filter
+- Category, Brand, and Price range filters
+- Dynamic routing for product detail pages
+- Conditional rendering (e.g., No products found)
+- Cart state is managed with `[STATE_MANAGEMENT_USED]` and saved to `localStorage`
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚠️ Commit Note
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> Due to time constraints, commits were not done feature-by-feature. I understand the importance of feature-based commits and will ensure proper version control in future projects.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📜 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project was developed as part of a recruitment assignment for Whatbytes.
