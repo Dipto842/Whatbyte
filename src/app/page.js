@@ -5,7 +5,7 @@ import Shop from '../../public/Shop.svg';
 import { FaShoppingCart } from "react-icons/fa";
 import Sidebar from "./components/Sidebar";
 import Carid from "./components/Carid";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { useRouter } from 'next/navigation';
 
 
@@ -59,12 +59,14 @@ const router = useRouter()
    price={price} setPrice={setPrice}
    secelektBrand={secelektBrand} setsecelektBrand={setsecelektBrand}
    ></Sidebar></div>
+   <Suspense fallback={<div className='text-center mt-10 text-gray-500'>Loading products...</div>}>
   <div className='col-span-2'><Carid
    selectedCategories={selectedCategories}
    secelektBrand={secelektBrand}
    price={price}
    searchQuery={searchQuery}
    ></Carid></div>
+   </Suspense>
 </div>
 
 
