@@ -77,7 +77,7 @@ console.log('searchQuery',searchQuery);
           <h3 className="text-lg font-medium">{product.title}</h3>
           <p className="text-sm text-gray-600">${product.price}</p>
           <Link href={`/product/${product.id}`}><button className="mt-2 w-full bg-blue-600 text-white px-3 py-1 cursor-pointer rounded hover:bg-blue-700">View Details</button></Link>
-          <button className="mt-2  w-full bg-blue-600 text-white px-3 py-1 cursor-pointer rounded hover:bg-blue-700">Add to Cart</button>
+        
           <div>
             <RatingStars rating={product.rating} />
           </div>
