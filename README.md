@@ -6,10 +6,10 @@ This is a frontend assignment built with **Next.js** and **Tailwind CSS**, based
 ---
 
 ## 🔗 Live Link
-👉 [View Live Site](https://[YOUR_LIVE_LINK])
+👉 [View Live Site](https://whatbyte-h4e8.vercel.app/?category=All&price=0-36)
 
 ## 🧾 GitHub Repository
-👉 [GitHub Repo](https://github.com/Dipto842/Whatbytes)
+👉 [GitHub Repo](https://github.com/Dipto842/Whatbyte)
 
 ---
 
